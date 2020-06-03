@@ -1,4 +1,16 @@
 body{
 text-align: center;
+vertical-align: text-bottom;
 font-family: 'Ubuntu', sans-serif;
+}
+
+.modal-dialog {
+  }
+
+.modal-content {
+    height: 100%; 
+  }
+
+.modal-body {
+    font-size: 5rem;
 }
