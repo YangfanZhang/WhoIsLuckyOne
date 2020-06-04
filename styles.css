@@ -9,11 +9,24 @@ h1{
 font-family: 'Alfa Slab One', cursive;
 font-size: 4rem;
 margin-top: 3%;
-margin-bottom: 5%;
+margin-bottom: 3%;
 }
 
-.modal-dialog {
-  }
+#generateBtn{
+margin: 2% 0 2% 0;
+}
+
+.alert {
+
+ }
+
+.MiddleSection{
+    margin: 3% 3% 3% 3%;
+}
+
+.AllList{
+    margin: auto;
+}
 
 .modal-content {
     height: 100%; 
@@ -21,4 +34,8 @@ margin-bottom: 5%;
 
 .modal-body {
     font-size: 5rem;
+}
+
+footer{
+    margin: 3% 0 3% 0;
 }
