@@ -1,6 +1,8 @@
 let allMembers = ["Adam", "Chris", "Eric", "Francois", "George", "Harry", "Hening", "James J", "James M", "Jayne", "Jia", "Johan", "Karthik", "Leighton", "Mark G", "Mark L", "Marty", "Matt", "Mike", "Pat", "Phillip", "Reesy", "Romey", "Shane", "Tyson", "Wesley", "Yangfan", "Yoong"];
 allMembers.sort();
 AppendItemsInAllMembers(allMembers);
+// roundOne = [ "Marty", "Yoong", "Reesy", "James J", "Matt", "James M", "Leighton", "Yangfan"];
+// localStorage.setItem("roundOneLocal", JSON.stringify(roundOne));
 
 
 if(localStorage.getItem('roundOneLocal') == null){
@@ -28,8 +30,8 @@ $('.saveBtn').on('click', function(e){
     roundOne =  JSON.parse(localStorage.getItem('roundOneLocal'));
     roundOne.push(textValue);
     localStorage.setItem("roundOneLocal", JSON.stringify(roundOne));
-    var col = selectCol(roundOne.length-1);
-    $(".PastList" + col).append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + textValue +
+    // var col = selectCol(roundOne.length-1);
+    $(".PastList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + textValue +
     "<button type=\"button\" class=\"close closeAlertBtn\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></strong></div>");
 })
 
@@ -48,32 +50,32 @@ function rollAgain(event){
 
 function AppendItemsInAllMembers(array) {
     for (let i = 0; i < array.length; i++) {
-        var col = selectCol(i);
-        $(".AllList" + col).append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>"+ array[i] +"</strong></div>");
+        // var col = selectCol(i);
+        $(".AllList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>"+ array[i] +"</strong></div>");
         }
 }
 
 function AppendItemsInroundOne(array){
     for (let i = 0; i < array.length; i++) {
-        var col = selectCol(i);
-        $(".PastList" + col).append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + array[i] +
+        // var col = selectCol(i);
+        $(".PastList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + array[i] +
         "<button type=\"button\" class=\"close closeAlertBtn\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></strong></div>");
     }
 }
 
-function selectCol(i) {
-    var col = 0;
-    if(i < 10){
-        col = 1;
-    }
-    else if(i < 20){
-        col = 2;
-    }
-    else{
-        col = 3;
-    }
-    return col;
-}
+// function selectCol(i) {
+//     var col = 0;
+//     if(i < 10){
+//         col = 1;
+//     }
+//     else if(i < 20){
+//         col = 2;
+//     }
+//     else{
+//         col = 3;
+//     }
+//     return col;
+// }
 
 function NextPicker(){
     var membersToChoose = $(allMembers).not(roundOne).get();

@@ -8,26 +8,35 @@ font-family: 'Roboto', sans-serif;
 h1{
 font-family: 'Alfa Slab One', cursive;
 font-size: 4rem;
-margin-top: 3%;
-margin-bottom: 3%;
+margin-top: 8%;
+margin-bottom: 8%;
 }
 
 #generateBtn{
-margin: 2% 0 2% 0;
+margin: 3% 0 5% 0;
 }
 
 .alert {
-
- }
+    display:inline-block;
+    margin-right: 10px;
+  }
 
 .MiddleSection{
-    margin: 3% 3% 3% 3%;
+    margin: 8% 3% 3% 3%;
 }
 
-.AllList{
+.pastSection{
+    margin-top: 5%;
+   margin-bottom: 10%;
+}
+
+/* .AllList{
     margin: auto;
+} */
+.closeAlertBtn{
+    margin-left: 20px;
+    margin-right: 0;
 }
-
 .modal-content {
     height: 100%; 
   }
@@ -37,5 +46,5 @@ margin: 2% 0 2% 0;
 }
 
 footer{
-    margin: 3% 0 3% 0;
+    margin: 10% 0 5% 0;
 }
