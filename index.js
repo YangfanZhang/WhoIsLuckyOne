@@ -1,9 +1,6 @@
 let allMembers = ["Adam", "Chris", "Eric", "Francois", "George", "Harry", "Hening", "James J", "James M", "Jayne", "Jia", "Johan", "Karthik", "Leighton", "Mark G", "Mark L", "Marty", "Matt", "Mike", "Pat", "Phillip", "Reesy", "Romey", "Shane", "Tyson", "Wesley", "Yangfan", "Yoong"];
 allMembers.sort();
 AppendItemsInAllMembers(allMembers);
-// roundOne = [ "Marty", "Yoong", "Reesy", "James J", "Matt", "James M", "Leighton", "Yangfan"];
-// localStorage.setItem("roundOneLocal", JSON.stringify(roundOne));
-
 
 if(localStorage.getItem('roundOneLocal') == null){
     roundOne = [ "Marty", "Yoong", "Reesy", "James J", "Matt", "James M", "Leighton", "Yangfan", "Tyson"];
