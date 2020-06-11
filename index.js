@@ -6,7 +6,7 @@ AppendItemsInAllMembers(allMembers);
 
 
 if(localStorage.getItem('roundOneLocal') == null){
-    roundOne = [ "Marty", "Yoong", "Reesy", "James J", "Matt", "James M", "Leighton", "Yangfan"];
+    roundOne = [ "Marty", "Yoong", "Reesy", "James J", "Matt", "James M", "Leighton", "Yangfan", "Tyson"];
     localStorage.setItem("roundOneLocal", JSON.stringify(roundOne));
 }
 else
