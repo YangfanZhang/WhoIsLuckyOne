@@ -27,7 +27,6 @@ $('.saveBtn').on('click', function(e){
     roundOne =  JSON.parse(localStorage.getItem('roundOneLocal'));
     roundOne.push(textValue);
     localStorage.setItem("roundOneLocal", JSON.stringify(roundOne));
-    // var col = selectCol(roundOne.length-1);
     $(".PastList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + textValue +
     "<button type=\"button\" class=\"close closeAlertBtn\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></strong></div>");
 })
@@ -47,14 +46,12 @@ function rollAgain(event){
 
 function AppendItemsInAllMembers(array) {
     for (let i = 0; i < array.length; i++) {
-        // var col = selectCol(i);
         $(".AllList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>"+ array[i] +"</strong></div>");
         }
 }
 
 function AppendItemsInroundOne(array){
     for (let i = 0; i < array.length; i++) {
-        // var col = selectCol(i);
         $(".PastList").append("<div class=\"alert alert-secondary \" role=\"alert\"><strong>" + array[i] +
         "<button type=\"button\" class=\"close closeAlertBtn\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></strong></div>");
     }
