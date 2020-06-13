@@ -60,20 +60,6 @@ function AppendItemsInroundOne(array){
     }
 }
 
-// function selectCol(i) {
-//     var col = 0;
-//     if(i < 10){
-//         col = 1;
-//     }
-//     else if(i < 20){
-//         col = 2;
-//     }
-//     else{
-//         col = 3;
-//     }
-//     return col;
-// }
-
 function NextPicker(){
     var membersToChoose = $(allMembers).not(roundOne).get();
     var randomNumber = Math.floor(Math.random()*membersToChoose.length);
